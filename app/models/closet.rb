@@ -1,4 +1,4 @@
 class Closet < ActiveRecord::Base 
-    belongs_to :mops
-    belongs_to :floors
+    belongs_to :mop
+    belongs_to :floor
 end

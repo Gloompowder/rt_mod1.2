@@ -31,13 +31,13 @@ j4 = Janitor.create!(name: "Chris")
 j5 = Janitor.create!(name: "Monica")
 j6 = Janitor.create!(name: "Heath")
 
-l1 = Label.create!(janitor:)
+l1 = Label.create!(janitor_id: j2.id, mop_id: m3.id)
 
-c1 = Closet.create!(mop:m1,floor:f1)
-c2 = Closet.create!(mop:m2,floor:f2)
-c3 = Closet.create!(mop:m3,floor:f3)
-c4 = Closet.create!(mop:m4,floor:f4)
-c5 = Closet.create!(mop:m5,floor:f5)
+c1 = Closet.create!(mop_id: m1.id,floor_id: f1.id)
+c2 = Closet.create!(mop_id: m2.id,floor_id: f2.id)
+c3 = Closet.create!(mop_id: m3.id,floor_id: f3.id)
+c4 = Closet.create!(mop_id: m4.id,floor_id: f4.id)
+c5 = Closet.create!(mop_id: m5.id,floor_id: f5.id)
 
 
 

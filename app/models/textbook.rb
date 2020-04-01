@@ -1,4 +1,4 @@
 class Textbook < ActiveRecord::Base 
-    belongs_to :students 
-    belongs_to :subjects
+    belongs_to :student
+    belongs_to :subject
 end
