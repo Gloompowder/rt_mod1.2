@@ -27,18 +27,6 @@ f15 = Floor.create!(level_of_shininess:1)
 f16 = Floor.create!(level_of_shininess:8)
 
 
-m1 = Mop.create!(brand: "Swiffer")
-m2 = Mop.create!(brand: "Roomba")
-m3 = Mop.create!(brand: "Rag")
-m4 = Mop.create!(brand: "Dog Rolling Around")
-m5 = Mop.create!(brand: "The One from Fantasia")
-
-j1 = Janitor.create!(name: "Elizabeth")
-j2 = Janitor.create!(name: "Kenny")
-j3 = Janitor.create!(name: "Mario")
-j4 = Janitor.create!(name: "Chris")
-j5 = Janitor.create!(name: "Monica")
-j6 = Janitor.create!(name: "Heath")
 
 l1 = Label.create!(janitor_id: j2.id, mop_id: m3.id)
 l1 = Label.create!(janitor_id: j2.id, mop_id: m4.id)
@@ -76,6 +64,19 @@ school13 = School.create!(name: "PS1")
 school14 = School.create!(name: "Staten Island latin")
 school15 = School.create!(name: "Murray Bergtraum")
 school16 = School.create!(name: "Pace University")
+
+j1 = Janitor.create!(name: "Elizabeth", school_id: school1.id)
+j2 = Janitor.create!(name: "Kenny", school_id: school1.id)
+j3 = Janitor.create!(name: "Mario", school_id: school2.id)
+j4 = Janitor.create!(name: "Chris", school_id: school2.id)
+j5 = Janitor.create!(name: "Monica", school_id: school2.id)
+j6 = Janitor.create!(name: "Heath", school_id: school3.id)
+
+m1 = Mop.create!(brand: "Swiffer")
+m2 = Mop.create!(brand: "Roomba")
+m3 = Mop.create!(brand: "Rag")
+m4 = Mop.create!(brand: "Dog Rolling Around")
+m5 = Mop.create!(brand: "The One from Fantasia")
 
 student1 = Student.create!(name: "Lester", school_id: school1.id)
 student2 = Student.create!(name: "Morgan", school_id: school2.id)
@@ -163,6 +164,15 @@ textbook39 = Textbook.create!(student_id: student4.id, subject_id: subject13.id)
 textbook40 = Textbook.create!(student_id: student3.id, subject_id: subject14.id)
 textbook41 = Textbook.create!(student_id: student3.id, subject_id: subject15.id)
 textbook42 = Textbook.create!(student_id: student3.id, subject_id: subject16.id)
+
+teacher1 = Teacher.create!(name: "Mr.Poppick", school_id: school1.id)
+teacher2 = Teacher.create!(name: "Mr.Winterfield", school_id: school2.id)
+teacher3 = Teacher.create!(name: "Mr.Serrano", school_id: school1.id)
+teacher4 = Teacher.create!(name: "Mr.Tannenbaum", school_id: school2.id)
+teacher5 = Teacher.create!(name: "Professor Social", school_id: school5.id)
+teacher6 = Teacher.create!(name: "Mr.Ethics", school_id: school1.id)
+teacher7 = Teacher.create!(name: "Mr.Lee", school_id: school4.id)
+teacher8 = Teacher.create!(name: "WOJO", school_id: school3.id)
 
 
 
